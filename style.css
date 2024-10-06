@@ -1,58 +1,84 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 @font-face {
     font-family: inter;
     src: url(./Inter-VariableFont_opsz\,wght.ttf);
 }
 body{
-    min-width: 100vw;
+    /* min-width: 100vw; */
     font-family: inter;
-    
+    /* color: rgb(90, 87, 87); */
 }
 p{
     font-size: 13px;
+    color: rgb(90, 87, 87);
+
 }
+/* .sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50px;
+  z-index: 999;
+  background-color: rgba(255, 0, 0, 0.39);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar ul{
+} */
 
 .navbar{
-    padding: 0.8rem 1rem;
-    display: flex;
-    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: rgba(229, 237, 245, 0.651);
+    backdrop-filter: blur(10px);
     position: fixed;
-    background-color: rgba(230, 243, 255, 0.651);
-    /* left: 0; */
 }
-.navbar img{
-    width: 9rem;
-    margin-left: 5rem;
-    margin-right: 16rem;
-}
+
+ 
 .navbar ul{
-    font-weight: 400;
-    font-size: 12px;
+    width: 100%;
     list-style: none;
-    margin-top: 0.5rem;
-    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
 }
 .navbar li{
-  display: inline-block;
-  margin-right: 0.8rem;
-  color: black;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
 }
+ .navbar a{
+    height: 100%;
+    padding: 0 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+ }
+ .navbar img{
+    margin-right: 8rem;
+    width: 10rem;
+ }
+    
 .navbar li:hover{
     cursor: pointer;
     color: orange;
+    transition-duration: 0.3s;
 }
 .btn1{
     padding: 0.6rem 1.4rem;
     background-color: white;
     border-radius: 3px;
     border: 0.5px solid  rgba(57, 169, 206, 0.493);
-    margin-right: 1rem;
-    margin-left: 1rem;
     font-weight: 600;
+    
 }
 .btn2{
     padding: 0.6rem 1.4rem;
@@ -61,9 +87,17 @@ p{
     border-radius: 3px;
     border: 0.5px solid orange;
     font-weight: 600;
+    margin-left: -0.5rem;
+    margin-right: 8rem;
+}
+.btn1{
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
 .btn2:hover{
-    background-color: rgb(218, 133, 7);
+    cursor: pointer;
+    background-color: rgb(168, 111, 6);
+    transition-duration: 0.3s;
 }
 .first{
     display: flex;
@@ -87,10 +121,15 @@ p{
     padding: 1rem 2rem;
     border-radius: 5px;
     border: 1px solid orange;
-    background-color: rgb(223, 148, 9);
+    background-color: orange;
     color: white;
     font-weight: 700;
     
+}
+.design-text button:hover{
+    cursor: pointer;
+    background-color: rgb(168, 111, 6);
+    transition-duration: 0.3s;
 }
 .btnvideo{
     margin-top: 2rem;
@@ -102,16 +141,18 @@ p{
     margin-left: 2rem;
     margin-right: 0.5rem;
     color: orange;
-    margin-top: -3rem;
+    /* margin-top: -10rem; */
 
 }
 .video{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .video h5{
     display: inline;
     color: orange;
+    /* margin-bottom: 5rem; */
 }
 .video a{
     text-decoration-color: orange;
@@ -196,6 +237,11 @@ p{
     color: white;
     border-radius: 5px;
     border: 1px solid orange;
+}
+.prod button:hover{
+    cursor: pointer;
+    background-color: rgb(168, 111, 6);
+    transition-duration: 0.3s;
 }
 .third{
     display: flex;
@@ -324,6 +370,11 @@ p{
     border: 1px solid orange;
     border-radius: 5px;
 }
+.superhero button:hover{
+   cursor: pointer;
+   background-color: rgb(168, 111, 6);
+   transition-duration: 0.3s;
+}
 .strategy{
     margin: 6rem;
     margin-top: -1rem;
@@ -356,6 +407,11 @@ p{
 .market1 h3{
    font-weight: 800;
 }
+.market1 b:hover{
+     cursor: pointer;
+     color: orange;
+     transition-duration: 0.3s;
+}
 .link{
     margin:  3.5rem  6rem;
     display: flex;
@@ -363,7 +419,7 @@ p{
     margin-bottom: -1rem;
 }
 .link h4{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .link img{
@@ -385,14 +441,20 @@ p{
     font-weight: 500;
 }
 .link p {
-   line-height: 1.5;
+   line-height: 1.7;
 }
+
 .link button{
     padding: 0.3rem 0.8rem;
     background-color: orange;
     color: white;
     border-radius: 3px;
     border: 1px solid orange;
+}
+.link button:hover{
+    cursor: pointer;
+    background-color: rgb(168, 111, 6);
+    transition-duration: 0.3s;
 }
 hr{
     margin: 0 6rem;
@@ -404,4 +466,19 @@ footer{
 }
 .span{
     margin-left: 35rem;
+}
+.span a:hover{
+   cursor: pointer;
+   color: orange;
+   transition-duration: 0.3s;
+}
+/* .br1:hover{
+    cursor: pointer;
+    color: orange
+} */
+/*
+media queries
+*/
+@media(min-width:320px) and (max-width:480px){
+    .navbar
 }
