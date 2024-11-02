@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -22,9 +22,33 @@ p{
 }
 
 /* Navbar section starts */
-.hamburger{
+.link .menu{
+    background-color: rgba(226, 28, 28, 0.801);
+    /* backdrop-filter: blur(10px); */
+    /* padding: 2rem; */
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: auto;
+    box-shadow: -10px 0 10px;
+    transition: 0.2s linear;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+   
+   
+}
+ 
+.hamburger img{
+    /* padding: 2px 3px;
+    border: 1px solid black;
+    border-radius: 3px; */
     display: none;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -1372,6 +1396,7 @@ media queries
         padding: 0 3rem;
         
      }
+    
      /* Product section ends */
 
      /* Customers section */
@@ -1393,11 +1418,12 @@ media queries
      }
      .manager-text{
         margin: 0;
-        margin-left: 3rem;
+        margin-left: 8rem;
         width: 80%;
      }
      .manager .img-one img{
         width: 100%;
+        /* margin-right: 4rem; */
      }
      /* Managers section ends */
 
