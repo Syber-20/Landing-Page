@@ -70,9 +70,9 @@ p{
 
 .navbar li{
     margin-right: 1rem;
-    font-size: 15px;
+    font-size: 25px;
     color: black;
-    font-weight: 300;
+    font-weight: 500;
 }
 .navbar a{
     text-decoration: none;
