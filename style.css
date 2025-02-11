@@ -236,19 +236,35 @@ p{
     flex-direction: column;
     margin-right: 1rem;
 }
+.arrow p{
+    font-size: 24px;
+    font-weight: 600;
+}
 .survey{
     display: flex;
     flex-direction: column;
     margin-right: 1rem;
+}
+.survey p{
+    font-size: 24px;
+    font-weight: 600;
 }
 .preference{
     display: flex;
     flex-direction: column;
     margin-right: 1rem;
 }
+.preference p{
+    font-size: 24px;
+    font-weight: 600;
+}
 .test{
     display: flex;
     flex-direction: column;
+}
+.test p{
+    font-size: 24px;
+    font-weight: 600;
 }
 .second img{
     width: 75px;
